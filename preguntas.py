@@ -131,7 +131,7 @@ def pregunta_03():
     pipeline = Pipeline(
         steps=[
             ("OneHotEncoder", OneHotEncoder()),
-            ("RLogistic", LogisticRegressionCV()),
+            ("RLogistic", LogisticRegressionCV(Cs=10)),
         ],
     )
 
